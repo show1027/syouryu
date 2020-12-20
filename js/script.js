@@ -20,7 +20,7 @@
 $(document).ready(function() {
     var pagetop = $('#pagetop');
       $(window).scroll(function () {
-         if ($(this).scrollTop() > 100) {
+         if ($(this).scrollTop() > 300) {
               pagetop.fadeIn();
          } else {
               pagetop.fadeOut();

@@ -151,7 +151,7 @@ button {
 }
 
 .header__nav--contents {
-  max-width: 1150px;
+  max-width: 920px;
   margin: 0 auto;
   text-align: center;
   display: -webkit-box;
@@ -170,6 +170,8 @@ button {
       -ms-flex: 1;
           flex: 1;
   border-right: 1px solid #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .header__nav--content:nth-child(1) {
@@ -180,12 +182,16 @@ button {
   display: block;
 }
 
+.header__nav--content:hover {
+  opacity: 0.6;
+}
+
 .header__nav--titleja {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .header__nav--titleen {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .header__topview {
@@ -197,7 +203,7 @@ button {
 }
 
 .header__topview-text {
-  width: 40%;
+  width: 30%;
   position: absolute;
   right: 13%;
   bottom: 0;
@@ -213,7 +219,7 @@ button {
 }
 
 .main .menu__title {
-  max-width: 1150px;
+  max-width: 920px;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 5%;
@@ -221,11 +227,11 @@ button {
 
 .main .menu__title h1 {
   border-bottom: 1px solid #fff;
-  font-size: 48px;
+  font-size: 38px;
 }
 
 .main .menu__title span {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .main .menu__contents {
@@ -234,7 +240,7 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 1150px;
+  max-width: 920px;
   width: 100%;
   margin: 0 auto;
 }
@@ -278,10 +284,16 @@ button {
 }
 
 .main .menu .menu__btn {
-  max-width: 672px;
+  max-width: 540px;
   width: 100%;
   margin: 0 auto;
   display: block;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.main .menu .menu__btn:hover {
+  opacity: 0.6;
 }
 
 .main .menu .menu__btn img {
@@ -297,19 +309,19 @@ button {
 }
 
 .main .access__title--box {
-  max-width: 1150px;
+  max-width: 920px;
   margin: 0 auto;
   padding: 0 12px;
 }
 
 .main .access__title h1 {
   border-bottom: 1px solid #fff;
-  font-size: 48px;
+  font-size: 38px;
   padding-top: 10%;
 }
 
 .main .access__title span {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .main .access__address {
@@ -323,18 +335,18 @@ button {
 }
 
 .main .contact {
-  max-width: 1150px;
+  max-width: 920px;
   margin: 10% auto 0 auto;
   padding: 0 12px;
 }
 
 .main .contact__title h1 {
   border-bottom: 1px solid #fff;
-  font-size: 48px;
+  font-size: 38px;
 }
 
 .main .contact__title span {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .main .contact__box {
@@ -376,7 +388,16 @@ button {
 }
 
 .main .contact__tel--box {
-  font-size: 24px;
+  font-size: 20px;
+}
+
+.main .contact__tel--box a {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.main .contact__tel--box a:hover {
+  opacity: 0.6;
 }
 
 .footer {
@@ -410,6 +431,12 @@ button {
       -ms-flex: 1;
           flex: 1;
   border-right: 1px solid #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.footer__nav--content:hover {
+  opacity: 0.6;
 }
 
 .footer__nav--content:nth-child(1) {
@@ -456,6 +483,12 @@ button {
   bottom: 360px;
   background: #40351a;
   border-radius: 50%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#pagetop:hover {
+  opacity: 0.6;
 }
 
 #pagetop a {
@@ -700,6 +733,9 @@ button {
     font-size: 28px !important;
   }
   .access__title span {
+    font-size: 18px !important;
+  }
+  .access__address {
     font-size: 18px !important;
   }
   .contact {
