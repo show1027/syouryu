@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <title>中華　翔龍</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header__logo pc-only">
+            <img src="img/header/mv-logo1.svg" alt="">
+        </div>
+        <div class="sp-fixed">
+            <div class="header__logo1 sp-only">
+                <img src="img/header/mv-logo1.svg" alt="中華翔龍">
+                <div class="nav-cover"></div>
+            </div>
+        </div>
+        <!-- PC -->
+        <nav class="header__nav pc-only">
+            <ul class="header__nav--contents">
+                <li class="header__nav--content">
+                    <a href="#">
+                        <span class="header__nav--titleja">トップ</span>
+                        <span class="header__nav--titleen">TOP</span>
+                    </a>
+                </li>
+                <li class="header__nav--content">
+                    <a href="#">
+                        <span class="header__nav--titleja">メニュー</span>
+                        <span class="header__nav--titleen">MENU</span>
+                    </a>
+                </li>
+                <li class="header__nav--content">
+                    <a href="#">
+                        <span class="header__nav--titleja">アクセス</span>
+                        <span class="header__nav--titleen">ACCESS</span>
+                    </a>
+                </li>
+                <li class="header__nav--content">
+                    <a href="#">
+                        <span class="header__nav--titleja">お問い合わせ</span>
+                        <span class="header__nav--titleen">CONTACT</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- SP -->
+        <div class="humburger">
+            <div id="navArea" class="sp-only">
+
+                <nav>
+                  <div class="inner">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="hambuger__ja">トップ</span>
+                                <span class="hambuger__en">TOP</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="hambuger__ja">お品書き</span>
+                                <span class="hambuger__en">MENU</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="hambuger__ja">所在地</span>
+                                <span class="hambuger__en">アクセス</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="hambuger__ja">お問い合わせ</span>
+                                <span class="hambuger__en">CONTACT</span>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+                </nav>
+              
+                <div class="toggle_btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              
+                <div id="mask"></div>
+              
+            </div>
+        </div>
+
+        <!-- トップビュー -->
+        <div class="header__topview pc-only">
+            <div class="header__topview-wrapper">
+                <img src="img/header/topview1.jpg" alt="中華レストラン翔龍">
+            </div>
+            <p class="header__topview-text">
+                <img src="img/header/top-view-logo.png" alt="1月8日オープン">
+            </p>
+        </div>
+        <div class="header__topview sp-only">
+            <div class="header__topview-wrapper">
+                <img src="img/header/topview2.jpg" alt="中華レストラン翔龍1月8日オープン">
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper">
+
+            <!-- メニュー -->
+            <section class="menu">
+                <div class="menu__title">
+                    <h1>お品書き</h1>
+                    <span>MENU</span>
+                </div>
+                <ul class="menu__contents">
+                    <li class="menu__content">
+                        <img src="img/menu/menu1-ramen.jpg" alt="ラーメン">
+                        <p class="menu__content--name">ラーメン</p>
+                        <p class="menu__content--taste">[味噌・塩・醤油]</p>
+                        <p class="menu__content--price">800円</p>
+                    </li>
+                    <li class="menu__content">
+                        <img src="img/menu/menu1-kararamen.jpg" alt="辛味ラーメン">
+                        <p class="menu__content--name">辛味ラーメン</p>
+                        <p class="menu__content--taste">[味噌・塩・醤油]</p>
+                        <p class="menu__content--price">880円</p>
+                    </li>
+                    <li class="menu__content">
+                        <img src="img/menu/menu1-zenmoriramen.jpg" alt="全盛ラーメン">
+                        <p class="menu__content--name">全盛りラーメン</p>
+                        <p class="menu__content--taste">[味噌・塩・醤油]</p>
+                        <p class="menu__content--price">800円</p>
+                    </li>
+                    <li class="menu__content">
+                        <img src="img/menu/menu1-ebichiri.jpg" alt="マイルドえびちり">
+                        <p class="menu__content--name">マイルドえびちり</p>
+                        <p class="menu__content--price">1,250円</p>
+                    </li>
+                    <li class="menu__content">
+                        <img src="img/menu/menu1-mabodohu.jpg" alt="石焼麻婆豆腐">
+                        <p class="menu__content--name">石焼麻婆豆腐</p>
+                        <p class="menu__content--price">780円</p>
+                    </li>
+                    <li class="menu__content">
+                        <div class="menu__content--box">
+                            <img src="img/menu/menu1-ramen&chahan.jpg" alt="チャーハンセット">
+                            <p><img src="img/menu/menu1-ramen&chahan-text1.svg" alt="チャーハンセット"></p>
+                        </div>
+                        <p class="menu__content--label">
+                            <img src="img/menu/menu1-ramen&chahan-text2.svg" alt="">
+                        </p>
+                    </li>
+                </ul>
+                <a class="menu__btn" href="#">
+                    <img src="img/menu/menu-button.svg" alt="メニュー表を見る">
+                </a>
+            </section>
+
+            <!-- アクセス -->
+            <section class="access">
+                <div class="access__title">
+                    <div class="access__title--box">
+                        <h1>所在地</h1>
+                        <span>ACCESS</span>
+                        <p class="access__address">〒000-0000 <br class="sp-only">住所入ります住所入ります住所入ります住所入ります住所入ります</p>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5830.131565327545!2d141.346286!3d43.06108400000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xae3a1889ad6f47b4!2z44Oe44OD44OB44Od44Kk44Oz44OI44ix!5e0!3m2!1sja!2sjp!4v1608355621288!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </section>
+
+            <!-- お問い合わせ -->
+            <section class="contact">
+                <div class="contact__title">
+                    <h1>お問い合わせ</h1>
+                    <span>CONTACT</span>
+                </div>
+                <div class="contact__box">
+                    <div class="contact__tel">
+                        <div class="contact__tel--logo">
+                            <img src="img/contact/contact-tel.svg" alt="">
+                        </div>
+                        <div class="contact__tel--box">
+                            <p>お電話でのお問い合わせはこちら</p>
+                            <a href="tel:0000-00-0000"><img src="img/contact/contact-tel2.png" alt="0000-00-0000"></a>
+                        </div>
+                    </div>
+                    <div class="contact__hour">
+                        <img src="img/contact/contact-hour.png" alt="ランチ 11:30~15:00(LO.14:30)　ディナー 17:00~22:00(LO.21:30)">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div id="pagetop"><a href="#"></a></div>
+        <nav class="footer__nav pc-only">
+            <ul class="footer__nav--contents">
+                <span class="footer__nav--logo"><img src="img/footer/footer-nav-logo.svg" alt="トップ"></span>
+                <li class="footer__nav--content" style="border-left: 1px solid #fff;">
+                    <a href="#">
+                        <span class="footer__nav--titleja">トップ</span>
+                        <span class="footer__nav--titleen">TOP</span>
+                    </a>
+                </li>
+                <li class="footer__nav--content">
+                    <a href="#">
+                        <span class="footer__nav--titleja">メニュー</span>
+                        <span class="footer__nav--titleen">MENU</span>
+                    </a>
+                </li>
+                <li class="footer__nav--content">
+                    <a href="#">
+                        <span class="footer__nav--titleja">アクセス</span>
+                        <span class="footer__nav--titleen">ACCESS</span>
+                    </a>
+                </li>
+                <li class="footer__nav--content">
+                    <a href="#">
+                        <span class="footer__nav--titleja">お問い合わせ</span>
+                        <span class="footer__nav--titleen">CONTACT</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="copyright">Copyright (c) katsuraya finegoods ALL Rights Reserved.</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

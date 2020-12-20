@@ -1,0 +1,702 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+body {
+ color: #fff;
+ line-height: 1.6;
+ font-weight: 400;
+ font-family: '小塚ゴシック Pr6N R';
+ width: 100%;
+ font-variant-numeric: tabular-nums;
+ /* safari hover対策 */
+ -webkit-font-smoothing: antialiased;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+ display:block;
+}
+
+ul, ol {
+ list-style:none;
+}
+
+blockquote, q {
+ quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content:'';
+ content:none;
+}
+
+a {
+ margin:0;
+ padding:0;
+ vertical-align:baseline;
+ text-decoration: none;
+ color: inherit;
+}
+
+/* change colours to suit your needs */
+ins {
+ background-color:#ff9;
+ color:#000;
+ text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+ background-color:#ff9;
+ color:#000;
+ font-style:italic;
+ font-weight:bold;
+}
+
+del {
+ text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+ border-bottom:1px dotted;
+ cursor:help;
+}
+
+table {
+ border-collapse:collapse;
+ border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+ display:block;
+ height:1px;
+ border:0;
+ border-top:1px solid #cccccc;
+ margin:1em 0;
+ padding:0;
+}
+
+input, select {
+ vertical-align:middle;
+}
+
+img {
+ vertical-align: bottom;
+ line-height: 1.0;
+}
+
+button {
+ line-height: 1.0;
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+ outline: none;
+ padding: 0;
+ appearance: none;
+}
+
+.sp-only {
+  display: none;
+}
+
+// ヘッダー
+
+.header {
+  font-family: '小塚ゴシック Pr6N R';
+
+  &__logo {
+    height: 198px;
+    line-height: 180px;
+    background-image: url(../img/header/mv1.jpg);
+    background-repeat: no-repeat;
+    img {
+      width: 100%;
+      height: 169px;
+    }
+  }
+  // ヘッダーナビ
+  &__nav {
+    background-image: url(../img/header/nav-bg1.jpg);
+    background-repeat: no-repeat;
+    padding: 10px 0;
+
+    &--contents {
+      max-width: 1150px;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &--content {
+      flex: 1;
+      border-right: 1px solid #fff;
+
+      &:nth-child(1) {
+        border-left: 1px solid #fff;
+      }
+      span {
+        display: block;
+      }
+    }
+    &--titleja {
+      font-size: 24px;
+    }
+    &--titleen {
+      font-size: 16px;
+    }
+  }
+  &__topview {
+    position: relative;
+    &-wrapper {
+      img {
+        width: 100%;
+      }
+    }
+    &-text {
+      width: 40%;
+      position: absolute;
+      right: 13%;
+      bottom: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.main {
+  background-image: url(../img/jpg/background.jpg);
+  padding: 100px 0;
+
+  // メニュー
+  .menu {
+    &__title {
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 5%;
+      
+      h1 {
+        border-bottom: 1px solid #fff;
+        font-size: 48px;
+      }
+      span {
+        font-size: 24px;
+      }
+    }
+    &__contents {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    &__content {
+      width: 30%;
+      padding-right: 5%;
+      margin-bottom: 5%;
+      font-size: 28px;
+
+      img {
+        width: 100%;
+      }
+      &:nth-child(3n) {
+        padding-right: 0;
+      }
+      &--name  {
+        padding-top: 5%;
+        img {
+          width: 80%;
+        }
+      }
+      &--box {
+        position: relative;
+
+        p {
+          position: absolute;
+          right: 3%;
+          bottom: 3%;
+          width: 50%;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .menu__btn {
+      max-width: 672px;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+  
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  // アクセス
+  .access {
+    margin-top: 5%;
+
+    &__title {
+      background-image: url(../img/access/access-background.jpg);
+
+      &--box {
+        max-width: 1150px;
+        margin: 0 auto;
+        padding: 0 12px;
+      }
+      h1 {
+        border-bottom: 1px solid #fff;
+        font-size: 48px;
+        padding-top: 10%;
+      }
+      span {
+        font-size: 24px;
+      }
+    }
+    &__address {
+      margin-top: 3%;
+      padding-bottom: 2%;
+      font-size: 24px;
+    }
+    iframe {
+      width: 100%;
+    }
+  }
+
+  // お問い合わせ
+  .contact {
+    max-width: 1150px;
+    margin: 10% auto 0 auto;
+    padding: 0 12px;
+
+    &__title {
+      h1 {
+        border-bottom: 1px solid #fff;
+        font-size: 48px;
+      }
+      span {
+        font-size: 24px;
+      }
+    }
+    &__box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #fff;
+      padding: 4% 0;
+
+      img {
+        width: 100%;
+      }
+    }
+    &__tel {
+      display: flex;
+      align-items: center;
+
+      &--logo {
+        max-width: 80px;
+        max-height: 80px;
+        width: 25%;
+        margin-right: 4%;
+
+        img {
+          width: 100%;
+        }
+      }
+      &--box {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+// フッター
+.footer {
+  background-image: url(../img/header/nav-bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__nav {
+    border-bottom: 1px solid #fff;
+    height: 278px;
+
+    &--contents {
+      max-width: 1150px;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &--content {
+      flex: 1;
+      border-right: 1px solid #fff;
+
+      &:nth-child(1) {
+        border-left: 1px solid #fff!important;
+      }
+      span {
+        display: block;
+      }
+    }
+    &--logo {
+      flex: 1;
+      display: flex!important;
+      justify-content: center;
+      position: relative;
+      top: 36px;
+      z-index: 0;
+    }
+    &--titleja {
+      font-size: 24px;
+    }
+    &--titleen {
+      font-size: 16px;
+    }
+  }
+  .copyright {
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
+#pagetop{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 25px;
+  bottom: 360px;
+  background: rgb(64, 53, 26);
+  opacity: 0.6;
+  border-radius: 50%;
+}
+#pagetop a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+}
+#pagetop a::before{
+  font-family: "Font Awesome 5 Free";
+  content: '\f106';
+  font-weight: 900;
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 5px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  // PC
+  .pc-only {
+    display: none;
+  }
+  // SP
+  .sp-only {
+    display: block;
+  }
+
+  // ヘッダー
+  .header {
+    &__logo {
+      height: 100px;
+      line-height: 90px;
+
+      img {
+        height: 80px;
+      }
+    }
+    .sp-fixed {
+      display: block;
+      position: fixed;
+      z-index: 3;
+      width: 100vw;
+    }
+    &__logo1 {
+      height: 100px;
+      line-height: 90px;
+      background-image: url(../img/header/mv1.jpg);
+      background-repeat: no-repeat;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 80px;
+      }
+    }
+    &__topview {
+      padding-top: 100px;
+    }
+  }
+
+  // ハンバーガーメニュー
+  .nav-cover {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .humburger {
+    /*============
+    nav
+    =============*/
+    nav {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: -300px;
+      bottom: 0;
+      width: 300px;
+      background: #ffffff;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      transition: all .5s;
+      z-index: 3;
+      opacity: 0;
+    }
+    .open nav {
+      left: 0;
+      opacity: 1;
+    }
+    nav .inner {
+      padding: 25px;
+    }
+    nav .inner ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav .inner ul li {
+      position: relative;
+      margin: 0;
+      border-bottom: 1px solid #333;
+    }
+    nav .inner ul li a {
+      display: block;
+      color: #333;
+      font-size: 14px;
+      padding: 1em;
+      text-decoration: none;
+      transition-duration: 0.2s;
+      text-align: center;
+
+      span {
+        display: block;
+      }
+    }
+    nav .inner ul li a:hover {
+      background: #e4e4e4;
+    }
+    @media screen and (max-width: 767px) {
+      nav {
+        left: -220px;
+        width: 220px;
+      }
+    }
+    /*============
+    .toggle_btn
+    =============*/
+    .toggle_btn {
+      display: block;
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      width: 30px;
+      height: 30px;
+      transition: all .5s;
+      cursor: pointer;
+      z-index: 3;
+
+      span {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #333;
+        border-radius: 4px;
+        transition: all .5s;
+  
+        &:nth-child(1) {
+          top: 4px;
+        }
+        &:nth-child(2) {
+          top: 14px;
+        }
+        &:nth-child(3) {
+          bottom: 4px;
+        }
+      }
+    }
+
+    .open {
+
+      .toggle_btn {
+
+        span {
+          &:nth-child(1) {
+            -webkit-transform: translateY(10px) rotate(-315deg);
+            transform: translateY(10px) rotate(-315deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            -webkit-transform: translateY(-10px) rotate(315deg);
+            transform: translateY(-10px) rotate(315deg);
+          }
+        }
+      }
+    }
+
+    /*============
+    #mask
+    =============*/
+    #mask {
+      display: none;
+      transition: all .5s;
+    }
+    .open #mask {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: .8;
+      z-index: 2;
+      cursor: pointer;
+    }
+  }
+
+  .main {
+    padding-top: 50px;
+  }
+
+  // メニュー
+  .menu {
+    padding: 0 12px;
+    &__title {
+      h1 {
+        font-size: 28px!important;
+      }
+      span {
+        font-size: 18px!important;
+      }
+    }
+    &__content {
+      width: 50%!important;
+      padding-right: 0!important;
+      margin-bottom: 5%;
+      font-size: calc(66 / 1200 * 100vw)!important;
+
+      img {
+        width: 100%;
+      }
+      &:nth-child(2n) {
+        padding-right: 0;
+      }
+      &--name  {
+        padding-top: 5%;
+        img {
+          width: 80%;
+        }
+      }
+      &--box {
+        position: relative;
+
+        p {
+          position: absolute;
+          right: 3%;
+          bottom: 3%;
+          width: 50%;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  // アクセス
+  .access {
+    &__title {
+      h1 {
+        font-size: 28px!important;
+      }
+      span {
+        font-size: 18px!important;
+      }
+    }
+  }
+
+  // コンタクト
+  .contact {
+    padding: 0 15px;
+
+    &__title {
+      h1 {
+        font-size: 28px!important;
+      }
+      span {
+        font-size: 18px!important;
+      }
+    }
+    &__box {
+      display: block!important;
+    }
+    &__tel {
+      &--box {
+        font-size: 16px!important;
+      }
+    }
+    &__hour {
+      margin-top: 4%;
+    }
+  }
+}
