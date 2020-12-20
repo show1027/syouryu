@@ -751,5 +751,16 @@ button {
   .contact__hour {
     margin-top: 4%;
   }
+  #pagetop {
+    right: 25px;
+    bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  #pagetop {
+    right: 25px;
+    bottom: 100px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
