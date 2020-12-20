@@ -412,7 +412,7 @@ button {
 }
 
 .footer__nav--contents {
-  max-width: 1150px;
+  max-width: 920px;
   margin: 0 auto;
   text-align: center;
   display: -webkit-box;
@@ -451,23 +451,18 @@ button {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-right: 12px;
   position: relative;
   top: 36px;
   z-index: 0;
 }
 
 .footer__nav--titleja {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .footer__nav--titleen {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .footer .copyright {
