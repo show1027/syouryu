@@ -347,9 +347,11 @@ button {
       }
       &--box {
         font-size: 20px;
+        white-space: nowrap;
         
         a {
           transition: all .5s;
+          font-size: calc(50 / 1200 * 100vw);
 
           &:hover {
             opacity: 0.6;
@@ -722,6 +724,10 @@ button {
     &__tel {
       &--box {
         font-size: 16px!important;
+
+        a {
+          font-size: calc(80 / 1200 * 100vw)!important;
+        }
       }
     }
     &__hour {

@@ -389,11 +389,13 @@ button {
 
 .main .contact__tel--box {
   font-size: 20px;
+  white-space: nowrap;
 }
 
 .main .contact__tel--box a {
   -webkit-transition: all .5s;
   transition: all .5s;
+  font-size: calc(50 / 1200 * 100vw);
 }
 
 .main .contact__tel--box a:hover {
@@ -747,6 +749,9 @@ button {
   }
   .contact__tel--box {
     font-size: 16px !important;
+  }
+  .contact__tel--box a {
+    font-size: calc(80 / 1200 * 100vw) !important;
   }
   .contact__hour {
     margin-top: 4%;
