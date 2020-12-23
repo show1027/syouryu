@@ -1,3 +1,4 @@
+// ハンバーガーメニュー
 (function($) {
     var $nav   = $('#navArea');
     var $btn   = $('.toggle_btn');
@@ -17,6 +18,7 @@
     });
 } )(jQuery);
 
+// トップへ戻る
 $(document).ready(function() {
     var pagetop = $('#pagetop');
       $(window).scroll(function () {
@@ -30,4 +32,16 @@ $(document).ready(function() {
              $('body, html').animate({ scrollTop: 0 }, 500);
                 return false;
      });
-  });  
+});  
+
+// ページ内スクロール
+$(function(){
+  $('a[href^="#"]').click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});

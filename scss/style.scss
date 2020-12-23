@@ -351,7 +351,8 @@ button {
         
         a {
           transition: all .5s;
-          font-size: calc(50 / 1200 * 100vw);
+          // font-size: calc(50 / 1200 * 100vw);
+          font-size: 50px;
 
           &:hover {
             opacity: 0.6;

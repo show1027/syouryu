@@ -395,7 +395,7 @@ button {
 .main .contact__tel--box a {
   -webkit-transition: all .5s;
   transition: all .5s;
-  font-size: calc(50 / 1200 * 100vw);
+  font-size: 50px;
 }
 
 .main .contact__tel--box a:hover {
